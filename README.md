@@ -1,6 +1,6 @@
 <div align="center">
 
-# 📚 jenkins-library-subfolder-loader
+# jenkins-library-subfolder-loader
 
 **A Jenkins step that loads a shared library from a subfolder of the repo being built.**
 
@@ -12,9 +12,9 @@ with one Glovo change. It is not a pipeline, not a Jenkins plugin and not a publ
 reads [`vars/`](vars) straight from git.
 
 [![Groovy](https://img.shields.io/badge/Groovy-Jenkins_pipeline-4298B8?logo=apachegroovy&logoColor=white)](vars/loadLocalLibrary.groovy)
-[![Jenkins core](https://img.shields.io/badge/Jenkins_core-2.201-D24939?logo=jenkins&logoColor=white)](build.gradle)
-[![Gradle](https://img.shields.io/badge/Gradle-5.2.1_wrapper-02303A?logo=gradle&logoColor=white)](gradle/wrapper/gradle-wrapper.properties)
-[![Java](https://img.shields.io/badge/Java-1.8_source-orange?logo=openjdk&logoColor=white)](build.gradle)
+[![Jenkins core](https://img.shields.io/badge/Jenkins_core-D24939?logo=jenkins&logoColor=white)](build.gradle)
+[![Gradle](https://img.shields.io/badge/Gradle-02303A?logo=gradle&logoColor=white)](gradle/wrapper/gradle-wrapper.properties)
+[![Java](https://img.shields.io/badge/Java-orange?logo=openjdk&logoColor=white)](build.gradle)
 <br/>
 [![Licence](https://img.shields.io/badge/licence-MIT-blue)](LICENCE)
 [![Fork](https://img.shields.io/badge/fork_of-marcus--held%2Fjenkins--library--subfolder--loader-lightgrey?logo=github)](https://github.com/marcus-held/jenkins-library-subfolder-loader)
@@ -151,7 +151,7 @@ loadLocalLibrary scm, "jenkins/library"
 ```text
 .
 ├── vars/
-│   └── loadLocalLibrary.groovy   ⭐ the loadLocalLibrary step: the only runtime code
+│   └── loadLocalLibrary.groovy   source of truth: the loadLocalLibrary step: the only runtime code
 ├── build.gradle                  # shared-library Gradle plugin, Jenkins core and plugin versions
 ├── settings.gradle               # project name, plugin repository
 ├── gradle/wrapper/               # Gradle 5.2.1 wrapper
